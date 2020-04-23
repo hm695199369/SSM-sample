@@ -1,0 +1,337 @@
+@charset "UTF-8";
+
+.middle {
+	width: 1110px;
+	height: 580px;
+	border: 0px solid red;
+	margin: 60px auto;
+}
+
+.middle_info_row {
+	width: 100%;
+	height: 60px;
+	/*border: 0px red solid;*/
+	/*position: absolute;
+				top: 60px;*/
+	border-bottom: 1px solid darkgray;
+}
+
+.middle_info_row3 {
+	width: 100%;
+	height: 60px;
+	/*border: 0px red solid;*/
+	/*position: absolute;
+				top: 60px;*/
+	border-bottom: 1px solid darkgray;
+}
+
+.middle_info_row3:hover {
+	background-color: #F8F8F8;
+}
+
+.middle_info_row4 {
+	width: 100%;
+	height: 80px;
+	border-bottom: 0px solid darkgray;
+}
+
+.middle_info_row1_right {
+	width: 150px;
+	height: 60px;
+	line-height: 60px;
+	border: 0px solid red;
+	float: right;
+	font-weight: bold;
+	font-size: x-large;
+}
+
+.middle_info_row1_middle {
+	width: 200px;
+	height: 60px;
+	line-height: 60px;
+	border: 0px solid red;
+	float: right;
+	font-weight: bold;
+	font-size: x-large;
+}
+
+.middle_info_row2_left {
+	width: 120px;
+	height: 30px;
+	border: 0px solid red;
+	float: left;
+	/*position: absolute;
+				top: 50px;*/
+	margin-top: 30px;
+}
+
+.middle_info_row2_right {
+	width: 120px;
+	height: 30px;
+	border: 0px solid red;
+	float: left;
+	font-weight: bold;
+	color: darkred;
+	/*position: absolute;
+				top:50px;
+				left: 120px;*/
+	margin-top: 30px;
+}
+
+.middle_info_row3_right {
+	width: 150px;
+	height: 60px;
+	line-height: 60px;
+	border: 0px solid red;
+	float: right;
+	font-size: x-large;
+}
+
+.middle_info_row3_middle {
+	width: 200px;
+	height: 60px;
+	line-height: 60px;
+	border: 0px solid red;
+	float: right;
+	font-size: x-large;
+}
+
+.middle_info_row3_left {
+	width: 400px;
+	height: 60px;
+	border: 0px solid red;
+	float: left;
+}
+
+.middle_info_row3_left img {
+	width: 60px;
+	height: 59px;
+}
+
+.middle_address {
+	width: 50%;
+	height: 330px;
+	margin-top: 30px;
+	border: 1px solid darkgray;
+	float: left;
+}
+
+.address_self {
+	text-align: left;
+}
+
+.middle_address_add {
+	width: 50%;
+	height: 330px;
+	margin-top: 30px;
+	border: 1px solid darkgray;
+	float: left;
+}
+
+.middle_address_title {
+	width: 100%;
+	height: 40px;
+	font-weight: bold;
+	font-size: x-large;
+}
+
+.middle_address_add_info {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	text-align: left;
+	font-weight: bold;
+	font-size: large;
+}
+
+.middle_address_add_info select {
+	width: 104px;
+	height: 30px;
+}
+
+.middle_address_add_info input {
+	width: 340px;
+	height: 36px;
+	border-radius: 5px;
+	border: 1px solid darkgray;
+	margin-left: 10px;
+}
+
+.pay_btn {
+	width: 160px;
+	height: 40px;
+	line-height: 40px;
+	margin-top: 20px;
+	margin-right: 160px;
+	margin-bottom: 70px;
+	/* 	border: 1px solid darkgray; */
+	/* 	border-radius: 5px; */
+	/* 	background-color: darkred; */
+	font-weight: bold;
+	color: white;
+	float: right;
+}
+
+.address_add_self {
+	width: 60px;
+	height: 40px;
+	line-height: 40px;
+	margin-right: 80px;
+	/* 	border: 1px solid dodgerblue; */
+	/* 	border-radius: 5px; */
+	/* 	background-color: dodgerblue; */
+	font-weight: bold;
+	color: white;
+	float: right;
+}
+
+#ad {
+	width: 0px;
+	height: 0px;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+}
+
+
+body, div, ul, li, p, a, img {
+	padding: 0;
+	margin: 0;
+}
+/*右侧悬浮菜单*/
+.slide {
+	width: 50px;
+	height: 250px;
+	position: fixed;
+	top: 50%;
+	margin-top: -126px;
+	background: #018D75;
+	right: 0;
+	border-radius: 5px 0 0 5px;
+	z-index: 999;
+}
+
+.slide ul {
+	list-style: none;
+}
+
+.slide .icon li {
+	width: 49px;
+	height: 50px;
+	background: url(/MyShop/image/icon1.png) no-repeat;
+}
+
+.slide .icon .up {
+	background-position: -330px -120px;
+}
+
+.slide .icon li.qq {
+	background-position: -385px -73px;
+}
+
+.slide .icon li.tel {
+	background-position: -385px -160px;
+}
+
+.slide .icon li.wx {
+	background-position: -385px -120px;
+}
+
+.slide .icon li.down {
+	background-position: -330px -160px;
+}
+
+.slide .info {
+	top: 50%;
+	height: 147px;
+	position: absolute;
+	right: 100%;
+	background: #018D75;
+	width: 0px;
+	overflow: hidden;
+	margin-top: -73.5px;
+	transition: 0.5s;
+	border-radius: 4px 0 0 4px;
+	font: normal 13px "宋体" !important;
+}
+
+.slide .info.hover {
+	width: 145px;
+}
+
+.slide .info li {
+	width: 145px;
+	color: #CCCCCC;
+	text-align: center;
+}
+
+.slide .info li p {
+	font-size: 1.1em;
+	line-height: 2em;
+	padding: 15px;
+	text-align: left;
+}
+
+.slide .info li.qq p a {
+	display: block;
+	margin-top: 12px;
+	width: 100px;
+	height: 32px;
+	line-height: 32px;
+	color: #00DFB9;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid #00DFB9;
+	border-radius: 5px;
+}
+
+.slide .info li.qq p a:hover {
+	color: #FFFFFF;
+	border: none;
+	background: #00E0DB;
+}
+
+.slide .info li div.img {
+	height: 100%;
+	background: #DEFFF9;
+	margin: 15px;
+}
+
+.slide .info li div.img img {
+	width: 100%;
+	height: 100%;
+}
+/*控制菜单的按钮*/
+.index_cy {
+	width: 30px;
+	height: 30px;
+	background: url(/MyShop/image/index_cy.png);
+	position: fixed;
+	right: 0;
+	top: 50%;
+	margin-top: 140px;
+	background-position: 62px 0;
+	cursor: pointer;
+}
+
+.index_cy2 {
+	width: 30px;
+	height: 30px;
+	background: url(/MyShop/image/index_cy.png);
+	position: fixed;
+	right: 0;
+	top: 50%;
+	margin-top: 140px;
+	background-position: 30px 0;
+	cursor: pointer;
+}
+/*自适应 当屏小于1050时隐藏*/
+@media screen and (max-width: 1050px) {
+	.slide {
+		display: none;
+	}
+	#btn {
+		display: none;
+	}
+}

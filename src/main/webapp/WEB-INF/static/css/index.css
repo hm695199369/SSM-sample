@@ -1,0 +1,95 @@
+body {
+	margin: 0px;
+}
+
+div {
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.header {
+	width: 100%;
+	height: 50px;
+	/*border: 1px solid red;*/
+	background-color: #F8F8F8;
+	box-shadow: 0 0 5px #808080;
+	position: fixed;
+	top: 0px;
+}
+
+.bottom {
+	width: 100%;
+	height: 50px;
+	background-color: #F8F8F8;
+	box-shadow: 0 0 5px #808080;
+	line-height: 50px;
+	color: grey;
+	position: fixed;
+	bottom: 0px;
+}
+
+.logo {
+	width: 280px;
+	height: 50px;
+	/*border: 1px solid red;*/
+	float: left;
+	font-weight: 600;
+	font-size: large;
+	line-height: 50px;
+	margin-left: 20px;
+}
+
+.menu {
+	width: 502px;
+	height: 50px;
+	/*border: 1px solid red;*/
+	float: right;
+	line-height: 50px;
+}
+
+.menu_name {
+	width: 60px;
+	height: 50px;
+	text-align: left;
+	font-size: small;
+	float: left;
+	margin-left: 30px
+}
+
+.menu_login {
+	width: 60px;
+	height: 50px;
+	text-align: left;
+	font-size: small;
+	float: left;
+	margin-left: 320px
+}
+
+.menu_register {
+	width: 60px;
+	height: 50px;
+	text-align: left;
+	font-size: small;
+	float: left;
+	margin-left: 30px
+}
+
+#cart {
+	width: 90px;
+	height: 50px;
+	float: left;
+}
+
+#account {
+	width: 150px;
+	height: 50px;
+	float: left;
+}
+
+a:link {
+	text-decoration: none;
+	font-weight: 600;
+	font-size: large;
+	color: #000000;
+}
+

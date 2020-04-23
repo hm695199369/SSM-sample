@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC " -//mybatis.org//DTD Mapper3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.dao.IStudent">
+
+	<select id="showByManyIF" resultType="Student">
+		select * from `t_student` where 1=1
+		<if test="realName !=null and realName !=''">
+			and realName like concat('%', #{realName}, '%')
+		</if>
+
+	</select>
+
+	<select id="showByManyForeach" resultType="Student">
+		select * from `t_student` where id in
+		<foreach item="id" index="index" collection="list" open="("
+			separator=", " close=")">
+			#{id}
+
+		</foreach>
+	</select>
+
+		<select id="showByManyChoose" resultType="Student">
+			SELECT * from `t_student`
+			<where>
+				<choose>
+					<when test="student.realName !=null and student.realName!=''">
+						AND realName like concat('%',
+						#{student.realName},'%')
+					</when>
+					<when test="student.school!= null and student.school!= '' ">
+						and school = #{student.school}
+					</when>
+					<otherwise>
+						and student.gender = '男'
+					</otherwise>
+				</choose>
+			</where>
+
+		</select>
+
+		<select id="showByManyWhere" resultType="Student">
+			SELECT * FROM `t_student`
+			<where>
+				<if test="student.realName !=null and student.realName!=''">
+					AND realName like concat('%',
+					#{student.realName},'%')
+				</if>
+				<if test="student.school!= null and student.school!= '' ">
+					AND school like concat('%',
+					#{student.school},'%')
+				</if>
+				<if test="student.home != null and student.home != null">
+					AND home like #{student.home}
+				</if>
+			</where>
+		</select>
+
+		<select id="showByManyTrim" resultType="Student">
+			select * from `t_student`
+			<trim prefix="WHERE" prefixOverrides="AND | OR">
+				<if test="realName != null and realName.length()>0">
+					AND realName like concat('%',
+					#{realName},'%')
+				</if>
+				<if test="school != null and school.length()>0">
+					AND school=#{school}
+				</if>
+			</trim>
+		</select>
+
+
+		<update id="updateByManyTrim">
+			update `t_student` set
+			<trim suffixOverrides=",">
+				<if test="realName != null">
+					realName=#{realName},
+				</if>
+				<if test="school != null">
+					school=#{school},
+				</if>
+			</trim>
+			where id=#{id}
+		</update>
+
+		<update id="updateByManySet">
+			update `t_student`
+			<set>
+				<if test="realName != null">realName=#{realName},</if>
+				<if test="school != null">school=#{school},</if>
+			</set>
+			where id=#{id}
+		</update>
+
+
+</mapper>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+
+<configuration>
+	
+<!-- 	<properties resource="db.properties"/> -->
+	
+	<settings>
+		<setting name="logImpl" value="STDOUT_LOGGING" /><!-- 打印sql日志 -->	
+		<setting name="cacheEnabled" value="true"/><!-- 二级缓存 -->
+	</settings>
+	
+<!-- 	<typeAliases> -->
+		
+<!-- 		<typeAlias alias="Student" type="com.demo.bean.Student" /> -->
+<!-- 	</typeAliases> -->
+
+<!-- 	<environments default="druid"> -->
+<!-- 		<environment id="development"> -->
+<!-- 			<transactionManager type="JDBC" /> -->
+<!-- 			<dataSource type="POOLED"> -->
+<!-- 				<property name="driver" value="com.mysql.jdbc.Driver" /> -->
+<!-- 				<property name="url" -->
+<!-- 					value="jdbc:mysql://localhost:3306/myshop" /> -->
+<!-- 				<property name="username" value="root" /> -->
+<!-- 				<property name="password" value="123456" /> -->
+<!-- 			</dataSource> -->
+<!-- 		</environment> -->
+		
+<!-- 		<environment id="c3p0"> -->
+<!-- 			<transactionManager type="JDBC" /> -->
+<!-- 			<dataSource type="com.demo.config.C3P0DataSourceFactory"> -->
+<!-- 				<property name="driverClass" value="com.mysql.jdbc.Driver" /> -->
+<!-- 				<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/myshop" /> -->
+<!-- 				<property name="user" value="root" /> -->
+<!-- 				<property name="password" value="123456" /> -->
+<!-- 				<property name="initialPoolSize" value="5"/> -->
+<!-- 				<property name="maxPoolSize" value="20"/> -->
+<!-- 				<property name="minPoolSize" value="5"/> -->
+<!-- 			</dataSource> -->
+<!-- 		</environment> -->
+		
+<!-- 		<environment id="druid"> -->
+<!-- 			<transactionManager type="JDBC" /> -->
+<!-- 			<dataSource type="com.demo.config.DruidDataSourceFactory"> -->
+<!-- 				<property name="driverClassName" value="com.mysql.jdbc.Driver" /> -->
+<!-- 				<property name="url" -->
+<!-- 					value="jdbc:mysql://localhost:3306/myshop" /> -->
+<!-- 				<property name="username" value="root" /> -->
+<!-- 				<property name="password" value="123456" /> -->
+<!-- 			</dataSource> -->
+<!-- 		</environment> -->
+<!-- 	</environments> -->
+
+<!-- 	<mappers> -->
+		
+<!-- 		<mapper resource="com/demo/dao/StudentMapper.xml" /> -->
+	
+<!-- 		<mapper class="com.demo.dao.IStudent" /> -->
+	
+
+<!-- 	</mappers> -->
+
+</configuration>
+
